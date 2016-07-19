@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-ARG ELASTICSEARCH_CURATOR_VERSION
+ENV ELASTICSEARCH_CURATOR_VERSION 4.0.1
 
 RUN set -x &&\
     apt-get update &&\
