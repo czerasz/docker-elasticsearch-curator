@@ -12,4 +12,6 @@ RUN set -x &&\
     apt-get remove -y wget &&\
     rm -rf /var/lib/apt/lists/*
 
+COPY ./curator.yml /root/.curator/curator.yml
+
 ENTRYPOINT ["/usr/local/bin/curator"]
